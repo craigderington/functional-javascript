@@ -15,7 +15,8 @@ function duckCount() {
 module.exports = duckCount;
 
 
-*/
+/*
+
 Official Solution
 
 function duckCount() {

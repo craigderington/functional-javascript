@@ -8,10 +8,8 @@ function repeat(fn, num) {
     fn();
     return repeat(fn, --num);
 }
-
-module.exports = repeat;
-
-
+// es5 vs es6 module.exports = repeat
+export default repeat;
 
 /*
 Official Solution
@@ -25,4 +23,12 @@ function repeat(operation, num) {
     module.exports = repeat
 
 */
+
+function repeat(fn, num) {
+    if (num === 0) return;
+    fn()
+    return repeat(fn, --num);
+}
+
+export default repeat;
 

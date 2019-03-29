@@ -1,3 +1,9 @@
+// coding: utf-8
+// NodeSchool.io - Functional Javascript Workshop
+// Filtering Arrays
+
+
+
 function getShortMessages(messages) {
      var filtered = messages.filter(function (msg) {
          if (msg.message && msg.message.length < 50) {
